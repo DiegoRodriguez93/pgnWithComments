@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .moveNumber{
+            font-size:12px!important;
+        }
+        .b{
+            width:1000px!important;
+        }
+    </style>
+</head>
+<body>
+    <div id="board" class="b"></div>
+    <script src="/js/pgnv.js"></script>
+    <script>
+        var pos1 = '3r4/p4pk1/P2p1bp1/q1rB3p/2P4P/3Q2P1/2R2PK1/4R3 w - - 0 35';
+        PGNV.pgnView('board',{position: pos1 , pgn: `35. Rb1 (35. Re4 $5 {[%cal Gc2e2,Ge4f4]}) 35... Qxa6 (35... Rc7 $142 36. Rb7
+Rdd7) 36. Rb7 Rf8 37. Re2 $1 Ra5 38. Re3 {[%csl Rf7][%cal Ge3f3]} (38. Re6 Qxb7
+) 38... Ra1 39. Rf3 $18 {[%cal Gf3f6]} Re1 40. Rxf6 Kxf6 41. Qf3+ 1-0`, pieceStyle: 'merida' });
+    </script>
+</body>
+</html>
